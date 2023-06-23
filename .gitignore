@@ -3,3 +3,6 @@ target
 *.iml
 **/*.iml
 **/.env
+lab1/cars_moldova.csv
+lab1/Test.csv
+lab1/Train.csv
