@@ -6,7 +6,7 @@ echo requirements installed
 python3 data_creation.py
 echo data downloaded
 
-python3 model_preprocessing.py
+python3 data_preprocessing.py
 echo preprocessing end
 
 python3 model_preparation.py
