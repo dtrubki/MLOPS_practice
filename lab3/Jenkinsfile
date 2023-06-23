@@ -1,0 +1,19 @@
+pipeline {
+  agent any
+  stages {
+    stage('build') {
+      steps {
+        dir ('lab3') {
+          sh 'docker build -t tag -f Dockerfile .'
+        }
+      }
+    }
+    stage('run') {
+      steps {
+        dir ('lab3') {
+          sh 'docker run tag'
+        }
+      }
+    }
+  }
+}
