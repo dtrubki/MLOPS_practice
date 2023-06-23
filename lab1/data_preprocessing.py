@@ -1,11 +1,11 @@
 import pandas as pd
-from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import StandardScaler
 
 Train = pd.read_csv('./Train.csv')
 Test = pd.read_csv('./Test.csv')
 
 data_train = Train.iloc[:,:3]
-scaler  = MinMaxScaler()
+scaler  = StandardScaler()
 scaler.fit_transform(data_train)
 data_train = scaler.transform(data_train)
 
